@@ -4,23 +4,32 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>User Manager</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="container">
       <h3>Add User</h3>
-      <form class="questions">
-        <label for="Name">Name</label>
-        <input type="text" id="Name" />
-        <label for="Role">Role</label>
-        <input type="text" id="Role" />
-        <label for="Bio">Bio</label>
-        <textarea name="Bio" id="Bio"></textarea>
-        <label for="Pic">Photo Url</label>
-        <input type="text" id="Pic" />
-        <button type="submit">Submit</button>
+      <form autocomplete="off" class="questions">
+        <label for="name">Name</label>
+        <input required type="text" id="name" />
+        <label for="role">Role</label>
+        <input required type="text" id="role" />
+        <label for="bio">Bio</label>
+        <textarea required name="bio" id="bio"></textarea>
+        <label for="pic">Photo Url</label>
+        <input required type="text" id="pic" />
+        <button type="submit" class="butt">Submit</button>
       </form>
     </div>
+    <div class="cards">
+<!--             <div class="card">
+        <img class="profile" src="https://plus.unsplash.com/premium_photo-1664353833878-e1c82a79ad3d?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="User Photo">
+        <h2 class="name">Vaibhav Pant</h2>
+        <p class="rol">Frontend Engineer</p>
+        <p class="bio">Love crafting digital experiences</p>
+    </div> -->
+    </div>
+
     <script src="script.js"></script>
   </body>
 </html>
